@@ -1,5 +1,4 @@
 # calculator
 HTML/JS calculator
 
-
-The bottom CLI is also a calculator that was used for testing
+You can now change the theme in the bottom CLI
