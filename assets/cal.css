@@ -14,13 +14,29 @@ body {
   width: 100%;
 }
 
+.theme-orange {
+  --theme-back-color: #ff740a;
+  --theme-screen-color: #fc7b19;
+  --theme-border-color: #d66006;
+  --theme-hover-color: #f17377;
+  --theme-button-color: linear-gradient(0deg, rgba(255, 122, 18, 1) 0%, rgba(255, 140, 50, 1) 46%, rgba(255, 122, 18, 1) 100%);
+}
+
+.theme-red {
+  --theme-back-color: #b01010;
+  --theme-screen-color: #ab0909;
+  --theme-border-color: #850707;
+  --theme-hover-color: #d11d1d;
+  --theme-button-color: linear-gradient(0deg, rgba(194, 16, 16, 1) 0%, rgba(214, 19, 19, 1) 46%, rgba(194, 16, 16, 1) 100%);
+}
+
 .calculator {
   border: 2px solid #212121;
   box-shadow: -5px 5px 10px #1a1a1a;
   border-radius: 5px;
   background-color: #3f3f3f;
   position: absolute;
-  top: 50%;
+  top: 48.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
@@ -31,7 +47,7 @@ body {
   font-size: 5rem;
   height: 80px;
   border: none;
-  background-color: #fc7b19;
+  background-color: var(--theme-screen-color);
   color: #fff;
   text-align: right;
   padding-right: 20px;
@@ -41,13 +57,12 @@ body {
 
 button {
   height: 60px;
-  background-color: #ff8629;
   border-radius: 6px;
   border: 1px ridge #252525;
   background-color: transparent;
   font-size: 2rem;
   color: white;
-  background: linear-gradient(0deg, rgba(255, 122, 18, 1) 0%, rgba(255, 140, 50, 1) 46%, rgba(255, 122, 18, 1) 100%);
+  background: var(--theme-button-color);
   text-shadow: -1.34px 0px #3f3f3f;
 }
 
@@ -61,8 +76,8 @@ button:hover {
 }
 
 .all-clear {
-  background-color: #ff740a;
-  border-color: #d66006;
+  background-color: var(--theme-back-color);
+  border-color: var(--theme-border-color);
   color: #fff;
 }
 
@@ -71,15 +86,15 @@ button:hover {
 }
 
 .equal-sign {
-  background-color: #ff740a;
-  border-color: #d66006;
+  background-color: var(--theme-back-color);
+  border-color: var(--theme-border-color);
   color: #fff;
   height: 100%;
   grid-area: 3 / 4 / 7 / 4;
 }
 
 .equal-sign:hover {
-  background-color: #ff8629;
+  background-color: var(--theme-hover-color);
 }
 
 .calculator-keys {
